@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us for an exciting Google Developers Local Event featuring workshops, networking, and cutting-edge tech talks">
+    <meta name="keywords" content="Google Developers, GDG, Tech Event, Developer Conference">
+    <meta name="author" content="Google Developer Group">
+    <title>Google Developers Local Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/gdg-logo.svg" alt="GDG Logo">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#speakers">Speakers</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to GDG DevFest 2024 🚀</h1>
+                <p>Join us for an incredible journey into technology and innovation 💻</p>
+                <button class="btn btn-primary" id="registerBtn">Register Now</button>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" class="features">
+            <h2>Event Highlights</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technical Workshops</h3>
+                    <p>Hands-on learning experiences</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Networking</h3>
+                    <p>Connect with industry experts</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & ML Tracks</h3>
+                    <p>Cutting-edge technologies</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Android and Flutter sessions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Google Cloud Platform deep dives</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certification Prep</h3>
+                    <p>Google certification guidance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Schedule -->
+        <section id="schedule" class="schedule">
+            <h2>Event Schedule</h2>
+            <div class="schedule-filters">
+                <button class="filter-btn active" data-track="all">All</button>
+                <button class="filter-btn" data-track="web">Web</button>
+                <button class="filter-btn" data-track="mobile">Mobile</button>
+                <button class="filter-btn" data-track="cloud">Cloud</button>
+            </div>
+            <div class="timeline">
+                <!-- Schedule items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <h2>What Developers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson" class="profile-img">
+                        <div class="info">
+                            <h4>Sarah Johnson</h4>
+                            <p>@sarahdev</p>
+                        </div>
+                    </div>
+                    <p class="quote">"Amazing event! Learned so much about the latest web technologies."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Mike Chen" class="profile-img">
+                        <div class="info">
+                            <h4>Mike Chen</h4>
+                            <p>@mikechen</p>
+                        </div>
+                    </div>
+                    <p class="quote">"The workshops were incredibly hands-on and practical."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Emily Rodriguez" class="profile-img">
+                        <div class="info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>@emilydev</p>
+                        </div>
+                    </div>
+                    <p class="quote">"Great networking opportunities and insightful sessions!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/150?img=4" alt="Alex Kim" class="profile-img">
+                        <div class="info">
+                            <h4>Alex Kim</h4>
+                            <p>@alexdev</p>
+                        </div>
+                    </div>
+                    <p class="quote">"The cloud computing track was exactly what I needed."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="speakers">
+            <h2>Featured Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://i.pravatar.cc/300?img=5" alt="John Doe" class="speaker-img">
+                    </div>
+                    <h3>John Doe</h3>
+                    <p class="speaker-role">Lead Developer @ Google</p>
+                    <p class="speaker-topic">Web Development</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://i.pravatar.cc/300?img=6" alt="Jane Smith" class="speaker-img">
+                    </div>
+                    <h3>Jane Smith</h3>
+                    <p class="speaker-role">Flutter Expert @ Google</p>
+                    <p class="speaker-topic">Mobile Development</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://i.pravatar.cc/300?img=7" alt="Mike Johnson" class="speaker-img">
+                    </div>
+                    <h3>Mike Johnson</h3>
+                    <p class="speaker-role">Cloud Architect @ Google</p>
+                    <p class="speaker-topic">Cloud Computing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section id="pricing" class="pricing">
+            <h2>Choose Your Pass</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Early Bird 🐦</h3>
+                        <p class="price">$99</p>
+                    </div>
+                    <ul class="features-list">
+                        <li>Access to all sessions</li>
+                        <li>Workshop materials</li>
+                        <li>Lunch included</li>
+                        <li>Community access</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Early Bird</button>
+                </div>
+                <div class="pricing-card recommended">
+                    <div class="pricing-header">
+                        <h3>Regular 🎟️</h3>
+                        <p class="price">$149</p>
+                    </div>
+                    <ul class="features-list">
+                        <li>All Early Bird features</li>
+                        <li>Priority seating</li>
+                        <li>Event T-shirt</li>
+                        <li>Recorded sessions</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Regular</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>VIP ⭐</h3>
+                        <p class="price">$299</p>
+                    </div>
+                    <ul class="features-list">
+                        <li>All Regular features</li>
+                        <li>1-on-1 mentoring</li>
+                        <li>VIP networking dinner</li>
+                        <li>Exclusive swag bag</li>
+                    </ul>
+                    <button class="btn btn-outline">Go VIP</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Register for DevFest</h2>
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticket">Ticket Type</label>
+                    <select id="ticket" required>
+                        <option value="early">Early Bird</option>
+                        <option value="regular">Regular</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>📧 contact@gdglocal.dev</p>
+                <p>📱 +1 (555) 123-4567</p>
+                <p>📍 Tech Hub, Innovation Street</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="#features">Features</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#speakers">Speakers</a>
+                <a href="#" class="code-of-conduct">Code of Conduct</a>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Google Developer Groups. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
